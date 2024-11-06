@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+
+    <!--  * Browser Icon -->
+    <link rel="shortcut icon" href="./assets/Imgs/logo.png">
+
+    <!-- ^ Poppins Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- ^ Dancing Script Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- ^ Font Awesome Library -->
+    <link rel="stylesheet" href="./assets/CSS/all.min.css">
+    <!-- ^ Bootstrap Css File  -->
+    <link rel="stylesheet" href="./assets/CSS/bootstrap.min.css">
+    <!-- ^ Main Css File -->
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+
+</head>
+
+<body data-bs-theme="dark" class="position-relative">
+    <!-- !-------------------< just for appear load-circle >----------------- -->
+
+    <div class="loading">
+        <div class="load-circle"></div>
+    </div>
+
+    <!-- *-------------------< Navbar >----------------- -->
+    <div class="side-nav  d-flex position-fixed top-0 min-vh-100" style="left:0px;">
+        <div class="side-nav-inner p-4 text-white d-flex flex-column justify-content-between min-vh-100 ">
+            <div class="profile mb-5 text-center">
+                <h1>Yummy</h1>
+            </div>
+            <ul class="mb-0 overflow-hidden position-relative bottom-25">
+                <li id="searchLink" class=" py-2 mb-2">
+                    <i class="fa-solid fa-magnifying-glass me-3"></i><span class="fs-5">Search</span>
+                </li>
+                <li id="categoriesLink" class=" py-2 mb-2">
+                    <i class="fa-solid fa-layer-group me-3"></i><span class="fs-5">Categories</span>
+                </li>
+                <li id="areaLink" class=" py-2 mb-2">
+                    <i class="fa-solid fa-earth-americas me-3"></i><span class="fs-5">Area</span>
+                </li>
+                <li id="ingredientsLink" class=" py-2 mb-2">
+                    <i class="fa-solid fa-burger me-3"></i><span class="fs-5">Ingredients</span>
+                </li>
+                <li id="contactUs" class=" py-2 mb-2">
+                    <i class="fa-solid fa-share-nodes me-3"></i><span class="fs-5">Contact us</span>
+                </li>
+                <li id="theme" class=" py-2 mb-2">
+                    <i class="fa-solid fa-circle-half-stroke me-3"></i><span class="fs-5">theme: Dark</span>
+                </li>
+            </ul>
+            <div class="nav-footer ps-32 ">
+                <div class="icons">
+                    <a href="https://www.facebook.com" target="_blank" class="text-white"><i
+                            class="fa-brands fa-facebook me-1"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" class="text-white"><i
+                            class="fa-brands fa-x-twitter me-1"></i></a>
+                    <a href="#" target="_blank" class="text-white"><i class="fa-solid fa-globe"></i></a>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header d-flex flex-column justify-content-between bg-white py-4 px-2 text-black ">
+            <img id="menuLogo" src="./assets/Imgs/logo.png" alt="logo">
+            <div id="menuIcon" class="text-center fs-5 ">
+                <i id="openIcon" class="menuIcon fa-solid fa-bars fa-2x"></i>
+                <i id="closeIcon" class="menuIcon fa-solid fa-xmark fa-2x"></i>
+            </div>
+            <div id="contactIcon" class="text-center fs-5 d-flex flex-column">
+                <i class="fa-solid fa-globe mb-2"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+    <!-- *----------------< Cover >---------------- -->
+    <header id="Cover">
+        <div class="backgroundImg">
+        </div>
+        <img id="Logo" src="./assets/Imgs/logo.png" alt="Logo">
+        <h1>Yummy</h1>
+        <p>
+            Discover Deliciousness with
+            <span class="main-color fw-semibold">Yummy</span> Recipes!
+        </p>
+    </header>
+    <!-- *----------------< Home >----------------- -->
+    <section id="home">
+        <div class="container-lg p-3 ">
+            <div id="data" class="row g-3">
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card rounded-2" onclick="getMealDetails('${meal.idMeal}')">
+                        <img src="./assets/Imgs/bgPhoto.png" alt="Meal" />
+                        <div class="overlay text-center d-flex  flex-column align-items-center justify-content-center">
+                            <h5 class="fs-5 text-black ">SeeFood</h5>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- *----------------< details >---------------- -->
+
+    <section id="mealDetails" class="overflow-auto bg-black">
+
+    </section>
+
+    <!-- *----------------< Search >---------------- -->
+    <section id="search" class=" p-4 " style="background-color:#0D0D0D;">
+        <i id="closeSearch" class="fa-solid fa-xmark  rounded-2 shadow text-black p-2 fs-5"></i>
+        <div class=" container-lg  p-5 ">
+            <div id="searchInputs" class="row g-3 ">
+                <div id="searchByName" class="col-md-6">
+                    <div class="input-container">
+                        <input type="text" placeholder="Search By Name" autocomplete="off" id="name"
+                            onkeyup="searchByName(this.value)">
+                        <label for="name" class="input-label ">Search By Name</label>
+                    </div>
+                </div>
+                <div id="searchByFLetter" class="col-md-6">
+                    <div class="input-container">
+                        <input type="text" placeholder="Search By First Letter" id="fletter" autocomplete="off"
+                            maxlength="1" onkeyup="searchByFLetter(this.value)">
+                        <label for="fletter" class="input-label ">Search By First Letter</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- *----------------< categories >---------------- -->
+    <section id="categories" class=" bg-black p-5 overflow-auto rounded-3 shadow ">
+        <div class="container-lg p-3 ">
+            <i id="closeCategories" class="fa-solid fa-xmark  rounded-2 shadow text-black p-2 fs-5"></i>
+            <div id="categoriesList" class="row g-3">
+                <!-- <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card rounded-2" onclick="getMealDetails('${meal.idMeal}')">
+                        <img src="./assets/Imgs/bgPhoto.png" alt="Meal" />
+                        <div class="overlay text-center d-flex flex-column align-items-center justify-content-center">
+                            <h4 class="fs-3 text-black ">SeeFood</h4>
+                            <p class="text-white "></p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- *----------------< area >---------------- -->
+    <section id="area" class=" bg-black p-5 overflow-auto rounded-3 shadow ">
+        <div class="container-lg p-3 ">
+            <i id="closeArea" class="fa-solid fa-xmark  rounded-2 shadow text-black p-2 fs-5"></i>
+            <div id="areaList" class="row g-3">
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card rounded-2 text-center d-flex flex-column align-items-center justify-content-center py-3"
+                        onclick="getAreaMeals(''); $('#data').css('opacity', '1'); $('#area').fadeOut(300)">
+                        <i class="fa-solid fa-earth-americas fa-3x mb-3"></i>
+                        <h4 class="mb-0 fs-3 .text-warning-emphasis"></h4>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- *----------------< ingredients >---------------- -->
+    <section id="ingredients" class=" bg-black p-5 overflow-auto rounded-3 shadow ">
+        <div class="container-lg p-3 ">
+            <i id="closeIngredients" class="fa-solid fa-xmark  rounded-2 shadow text-black p-2 fs-5"></i>
+            <div id="ingredientsList" class="row g-3">
+                <!-- <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card rounded-2" onclick="getMealDetails('${meal.idMeal}')">
+                        <img src="./assets/Imgs/bgPhoto.png" alt="Meal" />
+                        <div class="overlay text-center d-flex flex-column align-items-center justify-content-center">
+                            <h4 class="fs-3 text-warning ">SeeFood</h4>
+                            <p class="text-white "></p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- *----------------< contact-Us >---------------- -->
+    <section id="contact" class="bg-black p-5 overflow-auto rounded-3 shadow text-center">
+        <i id="closeContact" class="fa-solid fa-xmark  rounded-2 shadow text-black p-2 fs-5"></i>
+        <div class="container-lg p-3">
+            <form id="contactInputs" class="row">
+                <div class="col-md-6">
+                    <div class="input-container">
+                        <input placeholder="Enter Your Name" id="uName" type="text" autocomplete="off"
+                            onkeyup="uNameValidation(this.value)" />
+                        <label for="uName" class="input-label">Enter Your Name</label>
+                    </div>
+
+                    <div id="nameWarning" class="alert alert-danger">
+                        Username is invalid. It must be at least 3 characters long.
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="input-container">
+                        <input placeholder="Enter Your Email" id="email" type="email" autocomplete="off"
+                            onkeyup="emailValidation(this.value)" />
+                        <label for="email" class="input-label">Enter Your Email</label>
+                    </div>
+
+                    <div id="emailWarning" class="alert alert-danger">
+                        Email not valid *exemple@yyy.zzz
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="input-container">
+                        <input placeholder="Enter Your Phone" id="phone" type="tel" autocomplete="off"
+                            onkeyup="phoneValidation(this.value)" maxlength="15" />
+                        <label for="phone" class="input-label">Enter Your Phone</label>
+                    </div>
+
+                    <div id="phoneWarning" class="alert alert-danger">
+                        Invalid phone number. Please enter a valid mobile number
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="input-container">
+                        <input placeholder="Enter Your Age" id="age" type="number" autocomplete="off"
+                            onkeyup="ageValidation(this.value)" />
+                        <label for="age" class="input-label">Enter Your Age</label>
+                    </div>
+
+                    <div id="ageWarning" class="alert alert-danger">
+                        Enter valid age
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="input-container">
+                        <input placeholder="Enter Your Password" id="password" type="password" autocomplete="off"
+                            onkeyup="passwordValidation(this.value)" />
+                        <label for="password" class="input-label">Enter Your Password</label>
+                    </div>
+
+                    <div id="passwordWarning" class="alert alert-danger">
+                        Password must be at least 6 characters long and include at least one lowercase letter, one
+                        uppercase letter, and one special character.
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="input-container">
+                        <input placeholder="Repeat Your Password" id="rePassword" type="password" autocomplete="off"
+                            onkeyup="rePasswordValidation(this.value)" />
+                        <label for="rePassword" class="input-label">Repeat Your Password</label>
+                        <span class="input-highlight"></span>
+                    </div>
+
+                    <div id="rePasswordWarning" class="alert alert-danger">
+                        Enter valid rePassword
+                    </div>
+                </div>
+            </form>
+            <button id="submitBtn" class="btn  px-5 mt-5 disabled ">
+                Submit
+            </button>
+        </div>
+    </section>
+    <!-- ? JQuery JS File -->
+    <script src="./assets/JS/jquery-3.7.1.min.js"></script>
+    <!-- ? Main Js File -->
+    <script src="./assets/JS/main.js"></script>
+    <!-- ? jsconfig File -->
+    <script src="./assets/JS/jsconfig.json"></script>
+</body>
+
+</html>
