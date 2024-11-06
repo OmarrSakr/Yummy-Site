@@ -16,7 +16,7 @@
 ---
 
 ## Live Demo 🌐
-- Check out the live demo of the project at [`Yummy - Food Discovery Platform`](https://omarrsakr.github.io/Realtime-Weather-and-Prayer-Times-APP/).
+- Check out the live demo of the project at [`Yummy - Food Discovery Platform`](https://omarrsakr.github.io/Yummy-Site/).
 
 ---
 
