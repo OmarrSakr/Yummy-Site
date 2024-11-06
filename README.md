@@ -1,76 +1,60 @@
-# 🌦🕌 Realtime Weather and Prayer Times Application 
+# 🍴🥘 Yummy - Your Go-To Recipe and Food Discovery Platform 
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="https://github.com/user-attachments/assets/942375b2-9b00-4827-ab02-6fd6bfe0a080" alt="RealtimeWeather 1" style="width: 48%; margin-right: 1%;">
-    <img src="https://github.com/user-attachments/assets/c0e3d16a-3e67-4d8b-8b3f-81eeacb7ade5" alt="RealtimeWeather 2" style="width: 48%;">
+    <img src="https://github.com/user-attachments/assets/969b2ae2-ec44-41a3-b9e0-1bbac707f5e4" alt="Yummy 2"  style="width: 48%; margin-right: 1%;">
+    <img src="https://github.com/user-attachments/assets/ab2339c1-0d05-40d5-9e8a-6b87c8d2fda1" alt="Yummy 1"  style="width: 48%;">
 </div>
 <div>
     <br>
 </div>
 
-- This project is a `Realtime Weather Application` that provides live weather data along with `daily prayer times`.
-- This project is a <code>Dynamic website</code>.
-- The website features a user-friendly interface and updates weather and prayer `data automatically` every day.
-Below are the main sections of the website: 
+- `Yummy` is a dynamic **food discovery** platform that helps users explore various **recipes** based on **ingredients**, **categories**, and regions.
+- This platform is a `dynamic website` that offers `real-time food discovery`, including **recipe search**, **ingredient-based** suggestions, and more.
+- The website is designed with a clean and `user-friendly interface`, making it easy for food enthusiasts to find recipes, explore categories, and stay up to date with new `meal ideas`.
+- Below are the main sections of the website👇:
 
 ---
 
 ## Live Demo 🌐
-- Check out the live demo of the project at [`Realtime Weather and Prayer Times APP`](https://omarrsakr.github.io/Realtime-Weather-and-Prayer-Times-APP/).
+- Check out the live demo of the project at [`Yummy - Food Discovery Platform`](https://omarrsakr.github.io/Realtime-Weather-and-Prayer-Times-APP/).
 
 ---
 
 ## 🛠 Website Contents
 <code>1. *Header*:</code>
-  - *Site Title*: Displays "Weather & Prayer Times" with relevant icons.  
-- *Search Fields*:  
-  - *City Input Field*: Enter the name of a city to get weather data.  
-  - *Search Button*: Fetches the weather of the specified city.  
-  - *Current Location Button*: Retrieves weather and prayer times based on the user’s current location.  
+- **Site Title**: Displays "Yummy" with a relevant logo.
+- **Search Bar**: Allows users to search for recipes or ingredients by name.
+- **Navigation Links**: Includes links to various sections such as categories, areas, and ingredients.  
 
-<code>2. *Current Weather Section*:</code>
-  - *Current Temperature*: Displays live temperature data in Celsius.  
-- *Weather Icon*: Visual representation of the weather (e.g., sunny, rainy, cloudy).  
-- *Additional Weather Info*:  
-  - Current date and time.  
-  - City name and country.  
+<code>2. *Recipe Search Section*:</code>
+- **Search Results**: Displays recipes based on search terms, such as ingredients, cuisine, or meal type.
+- **Recipe Cards**: Each card shows the dish name, image, and a short description.
 
-<code>3. *5-Day Forecast Section* :</code>
- - *Daily Forecast Cards*: Each card displays:  
-  - Weather icon for each day.  
-  - Expected temperature.  
-  - Day and date.  
+<code>3. *Categories Section*:</code>
+- **Category Cards**: Displays various categories like "Breakfast," "Lunch," "Dinner," "Desserts," etc.
+- **Explore by Category**: Users can filter recipes based on meal categories.
 
-<code> 4. *Today's Highlights* :</code>
-  - *Air Quality Index (AQI)*: Displays air quality readings and pollutants such as PM2.5, PM10, CO, etc.  
-- *Sunrise & Sunset Times*:  
-  - Icons for sunrise and sunset with their respective times.  
-- *Additional Indicators*:  
-  - Humidity, Wind Speed, Pressure, Visibility, and Feels-Like Temperature.
+<code> 4. *Area-Based Section*:</code>
+- **Region-Specific Recipes**: Recipes categorized by region or cuisine (e.g., Italian, Mexican, Asian).
+- **Region Cards**: Displays food from specific areas to help users discover new flavors.
 
-<code> 5. *Hourly Forecast Section* </code>
- - Weather forecast by the hour (e.g., 6 AM, 9 AM, 12 PM).  
-- Each block includes:  
-  - Weather icon and forecasted temperature.
+<code> 5. *Ingredients Section*:</code>
+- **Ingredients Search**: Allows users to search for recipes based on the ingredients they have at home.
+- **Recipe Suggestions**: Displays recipe suggestions based on the entered ingredients.
 
-<code>6. *Prayer Times Section* :</code>
-- *Today’s Date* and day.  
-- *Prayer Cards*:  
-  - Includes Fajr, Dhuhr, Asr, Maghrib, and Isha prayers.  
-  - Displays icons and accurate prayer times for each prayer. 
+<code> 6. *Contact Us Section*:</code>
+- **Contact Form**: Users can reach out to the Yummy team for feedback, questions, or partnership inquiries.
 
-<code> 7. *External Resources* :</code>
-- *Font Awesome Icons* for visual enhancements.  
-- *Google Fonts* for stylish typography (e.g., Roboto, Montserrat).  
-- *Weather Images* stored locally in assets/Imgs. 
+<code> 7. *External Resources*:</code>
+- **Toggle Dark/Light Theme**: Users can switch between dark and light themes for an enhanced browsing experience.
 
 ---
 
 ## 🚀 Navigation between Sections
 
-- *Responsive Design*: The navigation bar adjusts for different screen sizes. On mobile devices, the navigation will be accessible through a toggle menu.
-- *Smooth Scrolling*: When clicking on a section link, the page will smoothly scroll to the selected section.
-- *Highlight Active Section*: The active section in the navigation bar will be highlighted for better user guidance as you scroll through the app.
+- **Responsive Design**: The navigation bar is optimized for mobile devices and will adjust automatically.
+- **Smooth Scrolling**: When clicking on a section link, the page will smoothly scroll to the selected section.
+- **Hover Effects on Icons**: Hover Effects on Icons: Smooth animations happen when you hover over the icons in the side. 
 
 ---
 
@@ -83,10 +67,13 @@ Provides the structure and content of the web pages.
 Used for styling and layout, including frameworks like Bootstrap and Font Awesome for responsive design and iconography.
 
 <code>JavaScript:</code>
-Implements the application's logic and facilitates interactions with APIs to fetch real-time weather and prayer times data.
+Implements interactive features like the theme switcher, search functionality, and dynamic content loading.
+
+<code>jQuery:</code>
+Utilized for simplifying DOM manipulation and event handling
 
 <code>APIs:</code>
-Connects to weather and prayer times services to retrieve up-to-date information.
+For fetching data related to recipes, ingredients, and categories in real-time
 
 <code>JSON:</code>
 Data format used to handle information retrieved from APIs.
@@ -96,41 +83,35 @@ Data format used to handle information retrieved from APIs.
 ## 🔑 API Integration
 The application uses the following APIs:
 
-<code>OpenWeather API:</code>
-Retrieves current and forecast weather data.
-API endpoint: https://api.openweathermap.org/data/2.5/
-
-<code>Prayer Times API:</code>
-Provides accurate prayer times for a specific location.
-API endpoint: https://api.aladhan.com/v1/timings
+<code>Free Meal API:</code> Retrieves recipes, ingredients, and meal details. API endpoint: https://www.themealdb.com/api.php
 
 ---
 
 ## How to Use 🚀  
 
-We welcome `contributions` to **Realtime Weather and Prayer Times Application**! Here’s how you can help:
+We welcome `contributions` to **Yummy - Food Discovery Platform** ! Here’s how you can help:
 1. *Fork the repository* - Click the "Fork" button at the top right of the repository page.
 2. *Clone your fork* - Use the command:
    
    ```bash
-   git clone https://github.com/OmarrSakr/Realtime-Weather-and-Prayer-Times-APP.git
+   git clone https://github.com/OmarrSakr/Yummy-Site.git
 
 ---
 
 ## 📂 Project Structure 
 ```
-📂 realtime-weather-prayer-times-app/
+📂 yummy/
 │  
 ├── 📁 *assets/*
-│   └── 🖼 *Imgs/*          # Local images for weather and UI  
+│   └── 🖼 *Imgs/*          # Local images for recipes and UI  
 ├── 🎨 *css/*
-│   ├── 📝 *styles.css*     # Main stylesheet  
+│   ├── 📝 *style.css*     # Main stylesheet  
 │   ├── 🌐 *all.min.css*    # Font Awesome Library
-|   ├──  bootstrap.min.css    # ❌Bootstrap CSS for layout and styling
+│   ├── bootstrap.min.css    # Bootstrap CSS for layout and styling
 ├── 🧑‍💻 *js/*
-│   ├── ⚙ *app.js*         # Main logic for fetching weather and prayer data  
-│   ├── bootstrap.bundle.min.js # ❌Bootstrap JavaScript bundle
-│   ├── 
+│   ├── ⚙ *app.js*         # Main logic for fetching recipe data
+│   ├── ⚙ *jsconfig.json*   # To make vsCode autocomplete jQuery
+│   ├── bootstrap.bundle.min.js # Bootstrap JavaScript bundle
 ├── 📄 *index.html*         # Main HTML file  
 └── 📕 *README.md*          # Documentation 
 
@@ -139,20 +120,32 @@ We welcome `contributions` to **Realtime Weather and Prayer Times Application**!
 
 ### 📌 Future Improvements
 
-- 🌙 Add dark mode functionality for better usability at night.
-- 🟢 <code>Offline Mode</code>: Save the latest data for offline viewing.
-- 🌀 Integrate animations for a smoother user experience.
+1- `Interactive Features`:
+- Recipe Rating & Reviews: Add functionality for users to rate and review meals. This could involve integrating a simple star rating system and a comment section.
+- Meal Customization: Allow users to customize their meal orders or explore variations based on ingredients or category preferences. This could be implemented with checkboxes or dynamic filtering.
+  
+2- `Advanced Features`:
+- Meal Subscription or Newsletter: Add a subscription feature where users can sign up to get new recipes delivered to their inbox or get notifications about new meal additions.
+- Social Sharing Options: Improve social sharing options for meals. Make it easy for users to share their favorite meals on platforms like Facebook, Instagram, or Twitter directly from the website.
+  
+3- `Accessibility`:
+- Keyboard Navigation: Improve accessibility by ensuring users can navigate through the site using just the keyboard, especially for the menu and form elements.
+- Alt Text for Images: Ensure all images have descriptive alt text for better screen reader compatibility.
+  
+ By implementing some of these improvements, you can enhance both the user experience and performance of the website, making it more engaging and easier to navigate.
  
 ---
 
 ### Important Notes 📢
 
-- This project is a Dynamic website.
--*API Keys*: Ensure that you have valid API keys for both the weather and prayer times services. You can obtain these from the respective service providers and should store them securely.
-- *Internet Connection*: This application requires a stable internet connection to fetch real-time data. Please ensure you are connected to the internet for the best experience.
-- *Device Compatibility*: The app is designed to be responsive and works best on modern browsers. It is recommended to test on different devices for optimal performance.
-- *Timezone Settings*: Make sure to configure your timezone settings correctly to receive accurate prayer times and weather forecasts.
-- *Cache Management*: If you experience issues with data loading, try clearing your browser's cache or refreshing the page.
+- This project is a `Dynamic website`.
+- **API Keys**: Ensure that you have valid API keys for accessing `food-related data`. You can obtain these from the respective service providers and should store them securely.
+- **Internet Connection**: The app requires an active internet connection for fetching live data.
+- **Device Compatibility**: The app is designed to be responsive and works best on modern browsers. It is recommended to test on different devices for optimal performance.
+- **Cache Management**: If you experience issues with data loading, try clearing your browser's cache or refreshing the page.
+ 
+---
+
 - 📪 `*Feedback*`: If you encounter any bugs or have suggestions for improvements,📨 `please reach out via` the contact information provided in `the README` or through the issue `tracker` on GitHub.
 
----
+
