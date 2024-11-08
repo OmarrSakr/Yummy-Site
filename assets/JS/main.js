@@ -702,7 +702,8 @@ $("#submitBtn").on("click", (e) => {
     localStorage.setItem("age", $("#age").val());
     $("#password").val();// لا تحتفظ بكلمة المرور في localStorage
     $("#rePassword").val();
-
+ 
+    // كدا انا بفرغ الحقل بعمل Clear Input
     $("#uName").val("");
     $("#email").val("");
     $("#phone").val("");
