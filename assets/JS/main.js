@@ -106,6 +106,7 @@ $(() => {
 
 // ? ===============> getCategoryMeals for displayMeals() <===============
 async function getCategoryMeals(category) {
+    $(".loading").fadeIn(300);
     // $("#loading").fadeIn(300);  
     try {
         const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`);
@@ -115,6 +116,7 @@ async function getCategoryMeals(category) {
         const data = await response.json();
         // console.log(data);
         displayMeals(data.meals.slice(0, 20)); // !👆🏻
+        $(".loading").fadeOut(300);
     }
     catch (error) {
         console.error("There was an error:", error);
@@ -125,6 +127,7 @@ getCategoryMeals("Seafood");       // here you must call the function getCategor
 
 // * =======================> getMealDetails for displayMealDetails() <===========================
 async function getMealDetails(mealID) {
+    $(".loading").fadeIn(300);
     try {
         console.log("Meal ID:", mealID);
         const response = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`);
@@ -134,6 +137,7 @@ async function getMealDetails(mealID) {
         const data = await response.json();
         // console.log(data);
         displayMealDetails(data.meals[0]); // !👇
+        $(".loading").fadeOut(300);
     }
     catch (error) {
         console.error("There was an error:", error.message);
@@ -342,6 +346,7 @@ $("body").on("click", (e) => {
 // ? ===============> getCategories <===============
 
 async function getCategories() {
+    $(".loading").fadeIn(300);
     try {
         const response = await fetch(`https://www.themealdb.com/api/json/v1/1/categories.php`);
         if (!response.ok) {
@@ -350,6 +355,7 @@ async function getCategories() {
         const data = await response.json();
         // console.log(data);
         displayCategories(data.categories);           // !
+        $(".loading").fadeOut(300);
         localStorage.setItem('savedCategories', JSON.stringify(data.categories));
     }
     catch (error) {
@@ -443,6 +449,7 @@ $("body").on("click", (e) => {
 // ? ================> getArea <==================
 
 async function getArea() {
+    $(".loading").fadeIn(300);
     try {
         const response = await fetch("https://www.themealdb.com/api/json/v1/1/list.php?a=list");
         if (!response.ok) {
@@ -452,6 +459,8 @@ async function getArea() {
         // console.log(data);
         if (data.meals && Array.isArray(data.meals)) {
             displayArea(data.meals);
+            $(".loading").fadeOut(300);
+
             localStorage.setItem('savedArea', JSON.stringify(data.meals));
 
         } else {
@@ -557,6 +566,7 @@ $("body").on("click", (e) => {
 // ? ===============> getIngredients <===============
 
 async function getIngredients() {
+    $(".loading").fadeIn(300);
     try {
         const response = await fetch(`https://www.themealdb.com/api/json/v1/1/list.php?i=list`);
         if (!response.ok) {
@@ -565,6 +575,7 @@ async function getIngredients() {
         const data = await response.json();
         // console.log(data);
         displayIngredients(data.meals);           // !
+        $(".loading").fadeOut(300);
         localStorage.setItem('savedIngredients', JSON.stringify(data.meals));
 
     }
@@ -641,7 +652,7 @@ $("#closeContact").on("click", () => {
     $("#contact").fadeOut(300);
     localStorage.setItem('contactUsVisible', 'false');
 });
-$("#contactUs").on("click", () => {
+$("#contactUsLink").on("click", () => {
     closeSideNav();
     $("#contact").fadeIn(300);
     localStorage.setItem('contactUsVisible', 'true');
@@ -702,7 +713,7 @@ $("#submitBtn").on("click", (e) => {
     localStorage.setItem("age", $("#age").val());
     $("#password").val();// لا تحتفظ بكلمة المرور في localStorage
     $("#rePassword").val();
- 
+
     // كدا انا بفرغ الحقل بعمل Clear Input
     $("#uName").val("");
     $("#email").val("");
@@ -823,15 +834,44 @@ $(() => {
 // * ================> just for ( preload ) when you preload this website .. it will appear load-circle <====================
 
 
-
-$(() => {
-    // تقليل الوقت الظاهر للـ preloader(مهلة زمنية محددة setTimeout)
-    setTimeout(() => {
-        // إضافة الفئة لإنهاء عرض الـ preloader
-        $('.loading').addClass('loading-end');
-        // إخفاء الـ preloader بعد فترة قصيرة
-        setTimeout(() => {
-            $('.loading').addClass('disabled');
-        }, 800);
-    }, 1000);
+jQuery(() => {
+    //* $("#data") => Located in (Home Section)
+     //* انتظر حتى يتم تحميل البيانات
+    let dataTime = $("#data");
+    if (dataTime.length > 0) {
+        //* البيانات جاهزة، لذلك يمكن إخفاء شاشة التحميل
+        $(".loading").fadeOut(500, () => {
+            $("body").removeClass("no-scroll");
+        });
+    }
 });
+
+
+
+
+
+$(document).ready(function () {
+    $('.side-nav ul li').on('click', function () {
+
+        $('#search').hide();
+        $('#categories').hide();
+        $('#area').hide();
+        $('#ingredients').hide();
+        $('#contact').hide();
+
+        let targetContentId = $(this).attr('id')
+            .replace('UsLink', '')  // إزالة "UsLink"
+            .replace('Link', '');    // إزالة "Link"
+
+        if ($('#' + targetContentId).length > 0) {
+            $('#' + targetContentId).show();
+        } else {
+            console.log("المحتوى غير موجود للـ ID: " + targetContentId);
+        }
+        $("#data").show;
+    });
+});
+
+
+
+
