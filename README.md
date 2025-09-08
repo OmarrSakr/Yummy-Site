@@ -33,7 +33,7 @@
 **`Yummy`** is a dynamic food discovery platform built with modern web technologies to help users explore various **`recipes`** based on **`ingredients`**, **`categories`**, and **`regions`**.  
 The platform offers **`real-time food discovery`**, **`ingredient-based suggestions`**, and **`regional cuisine exploration`** with a clean, user-friendly interface.
 
-<img src="https://github.com/user-attachments/assets/969b2ae2-ec44-41a3-b9e0-1bbac707f5e4" alt="Yummy Platform Demo" width="600">
+<img src="./yummy1.png" alt="Yummy Platform Demo" width="600">
 
 </div>
 
@@ -62,8 +62,8 @@ The platform offers **`real-time food discovery`**, **`ingredient-based suggesti
 ## 📷 Screenshots
 <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/969b2ae2-ec44-41a3-b9e0-1bbac707f5e4" width="400"></td>
-    <td><img src="https://github.com/user-attachments/assets/ab2339c1-0d05-40d5-9e8a-6b87c8d2fda1" width="400"></td>
+    <td><img src="./yummy1.png" width="400"></td>
+    <td><img src="./yummay2.png" width="400"></td>
   </tr>
 </table>
 </div>
