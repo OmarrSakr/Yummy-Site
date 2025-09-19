@@ -33,7 +33,7 @@
 **`Yummy`** is a dynamic food discovery platform built with modern web technologies to help users explore various **`recipes`** based on **`ingredients`**, **`categories`**, and **`regions`**.  
 The platform offers **`real-time food discovery`**, **`ingredient-based suggestions`**, and **`regional cuisine exploration`** with a clean, user-friendly interface.
 
-<img src="./yummy1.png" alt="Yummy Platform Demo" width="600">
+<img src="./yummy11.png" alt="Yummy Platform Demo" width="600">
 
 </div>
 
@@ -62,11 +62,29 @@ The platform offers **`real-time food discovery`**, **`ingredient-based suggesti
 ## 📷 Screenshots
 <table>
   <tr>
-    <td><img src="./yummy1.png" width="400"></td>
-    <td><img src="./yummay2.png" width="400"></td>
+    <td><img src="./yummy1.png" width="200"></td>
+    <td><img src="./yummay2.png" width="200"></td>
+  </tr>
+  <tr>
+    <td><img src="./yummy3.png" width="200"></td>
+    <td><img src="./yummy4.png" width="200"></td>
+  </tr>
+  <tr>
+    <td><img src="./yummy5.png" width="200"></td>
+    <td><img src="./yummy6.png" width="200"></td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td><img src="./yummy7.png" width="200"></td>
+    <td><img src="./yummy8.png" width="200"></td>
+  </tr>
+  <tr>
+    <td><img src="./yummy9.png" width="200"></td>
+    <td><img src="./yummy10.png" width="200"></td>
   </tr>
 </table>
 </div>
+
 
 ---
 
