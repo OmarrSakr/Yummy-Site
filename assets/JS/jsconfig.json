@@ -1,6 +1,9 @@
-
 {
-    "typeAcquisition": {
-        "include": ["jquery"]
-    }
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["es6", "dom"]
+  },
+  "typeAcquisition": {
+    "include": ["jquery"]
+  }
 }
