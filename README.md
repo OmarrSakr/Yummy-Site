@@ -63,7 +63,7 @@ The platform offers **`real-time food discovery`**, **`ingredient-based suggesti
 <table>
   <tr>
     <td><img src="./yummy1.png" width="200"></td>
-    <td><img src="./yummay2.png" width="200"></td>
+    <td><img src="./yummy2.png" width="200"></td>
   </tr>
   <tr>
     <td><img src="./yummy3.png" width="200"></td>
