@@ -332,6 +332,8 @@ See the [**`LICENSE`**](./LICENSE.md) file for details.
 
 **⭐ If you found this project helpful, please give it a star! ⭐**
 
-*Built with ❤️ for the community*
+*Built with ❤️ by Omar Sakr*
+
+[![Follow on GitHub](https://img.shields.io/github/followers/OmarrSakr?style=social)](https://github.com/OmarrSakr)
 
 </div>
